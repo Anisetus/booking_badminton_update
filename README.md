@@ -15,9 +15,9 @@
 ## langkah-langkah untuk membuka
 - composer update
 - php artisan key:generate
-- php artisan migrate
-- php artisan db:seed
+- php artisan migrate --seed
 - php artisan serve
+- npm run dev
 - untuk melihat akun yang terdaftar bisa lihat di seeder.php
 
 ## Author
