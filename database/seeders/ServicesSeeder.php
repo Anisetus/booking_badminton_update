@@ -10,73 +10,67 @@ class ServicesSeeder extends Seeder
     public function run(): void
     {
         Service::create([
-            'name' => 'Nail Extensions',
-            'slug' => 'nail-extensions',
-            'description' => 'Get beautiful nail extensions for a stylish look.',
-            'image' => 'nail_extensions.jpg',
-            'price' => 1250.00,
-            'notes' => 'Choose from a variety of nail designs and colors.',
+            'name' => 'Badminton Court Booking - Morning',
+            'slug' => 'badminton-court-booking-morning',
+            'description' => 'Book a badminton court for your morning game.',
+            'image' => 'badminton_court_morning.jpg',
+            'price' => 75000.00,
+            'notes' => 'Available from 6 AM to 12 PM.',
             'allergens' => null, // No allergens in this service
-            'benefits' => 'Adds length and beauty to your nails.',
-            'aftercare_tips' => 'Avoid harsh chemicals on your nails to maintain the extensions.',
-            'cautions' => null, // No specific cautions for this service
-//            'duration_minutes' => 90, // Duration in minutes
+            'benefits' => 'Enjoy a refreshing morning workout.',
+            'aftercare_tips' => 'Cool down and hydrate after playing.',
+            'cautions' => 'Ensure to wear proper sports attire.',
+//            'duration_minutes' => 60, // Duration in minutes
+            'category_id' => 1, // Replace with the actual category ID
+            'is_hidden' => false,
+        ]);
+
+        Service::create([
+            'name' => 'Badminton Court Booking - Afternoon',
+            'slug' => 'badminton-court-booking-afternoon',
+            'description' => 'Book a badminton court for your afternoon game.',
+            'image' => 'badminton_court_afternoon.jpg',
+            'price' => 85000.00,
+            'notes' => 'Available from 12 PM to 6 PM.',
+            'allergens' => null, // No allergens in this service
+            'benefits' => 'Enjoy a fun and energetic afternoon game.',
+            'aftercare_tips' => 'Cool down and hydrate after playing.',
+            'cautions' => 'Ensure to wear proper sports attire.',
+//            'duration_minutes' => 60, // Duration in minutes
             'category_id' => 2, // Replace with the actual category ID
             'is_hidden' => false,
         ]);
 
         Service::create([
-            'name' => 'Hair Coloring - Highlights',
-            'slug' => 'hair-coloring-highlights',
-            'description' => 'Add vibrant highlights to your hair for a stunning effect.',
-            'image' => 'hair_coloring_highlights.jpg',
-            'price' => 3000.00,
-            'notes' => 'Consult with our colorist for the best shade selection.',
-            'allergens' => 'Hair dye may contain allergens; inform us of any allergies.',
-            'benefits' => 'Transform your look with beautifully colored highlights.',
-            'aftercare_tips' => 'Use color-safe shampoos and conditioners to preserve color.',
-            'cautions' => 'Patch test required for new clients with allergies.',
-//            'duration_minutes' => 120, // Duration in minutes
-            'category_id' => 3, // Replace with the actual category ID
-            'is_hidden' => false,
-        ]);
-
-        Service::create([
-            'name' => 'Hair Treatment - Deep Conditioning',
-            'slug' => 'hair-treatment-deep-conditioning',
-            'description' => 'Revitalize your hair with deep conditioning treatment.',
-            'image' => 'hair_treatment_deep_conditioning.jpg',
-            'price' => 4000.00,
-            'notes' => 'Recommended for dry and damaged hair.',
+            'name' => 'Badminton Court Booking - Evening',
+            'slug' => 'badminton-court-booking-evening',
+            'description' => 'Book a badminton court for your evening game.',
+            'image' => 'badminton_court_evening.jpg',
+            'price' => 95000.00,
+            'notes' => 'Available from 6 PM to 10 PM.',
             'allergens' => null, // No allergens in this service
-            'benefits' => 'Nourish and repair your hair for improved texture and shine.',
-            'aftercare_tips' => 'Use recommended hair masks for ongoing maintenance.',
-            'cautions' => null, // No specific cautions for this service
+            'benefits' => 'Enjoy a relaxing evening game.',
+            'aftercare_tips' => 'Cool down and hydrate after playing.',
+            'cautions' => 'Ensure to wear proper sports attire.',
 //            'duration_minutes' => 60, // Duration in minutes
             'category_id' => 3, // Replace with the actual category ID
             'is_hidden' => false,
         ]);
 
-
         Service::create([
-            'name' => 'Hair Treatment - Scalp Massage',
-            'slug' => 'hair-treatment-scalp-massage',
-            'description' => 'Relaxing scalp massage to rejuvenate your hair and mind.',
-            'image' => 'hair_treatment_scalp_massage.jpg',
-            'price' => 3500.00,
-            'notes' => 'Enjoy a soothing massage with aromatic oils.',
-            'allergens' => 'Massage oils may contain allergens; inform us of any allergies.',
-            'benefits' => 'Promote scalp health and reduce stress with this pampering treatment.',
-            'aftercare_tips' => 'Take time to relax and destress after the treatment.',
-            'cautions' => null, // No specific cautions for this service
-//            'duration_minutes' => 45, // Duration in minutes
-            'category_id' => 3, // Replace with the actual category ID
+            'name' => 'Badminton Court Booking - Night',
+            'slug' => 'badminton-court-booking-night',
+            'description' => 'Book a badminton court for your late-night game.',
+            'image' => 'badminton_court_night.jpg',
+            'price' => 100000.00,
+            'notes' => 'Available from 10 PM to 12 AM.',
+            'allergens' => null, // No allergens in this service
+            'benefits' => 'Enjoy a game at your convenience at night.',
+            'aftercare_tips' => 'Cool down and hydrate after playing.',
+            'cautions' => 'Ensure to wear proper sports attire.',
+//            'duration_minutes' => 60, // Duration in minutes
+            'category_id' => 4, // Replace with the actual category ID
             'is_hidden' => false,
         ]);
-
-
-
-
-
     }
 }

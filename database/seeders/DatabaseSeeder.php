@@ -73,19 +73,19 @@ class DatabaseSeeder extends Seeder
 
         // categories Skin, Makeup, Nails, Hair
         \App\Models\Category::create([
-            'name' => 'Skin',
+            'name' => 'lapangan1',
         ]);
 
         \App\Models\Category::create([
-            'name' => 'Makeup',
+            'name' => 'lapangan2',
         ]);
 
         \App\Models\Category::create([
-            'name' => 'Hair',
+            'name' => 'lapangan3',
         ]);
 
         \App\Models\Category::create([
-            'name' => 'Nails',
+            'name' => 'lapangan4',
         ]);
 
         $this->call([
