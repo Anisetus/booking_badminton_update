@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2024 at 07:13 AM
+-- Generation Time: Jun 07, 2024 at 07:22 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -144,13 +144,6 @@ CREATE TABLE `pengelola_lapangan` (
   `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `pengelola_lapangan`
---
-
-INSERT INTO `pengelola_lapangan` (`id_pengelola_lapangan`, `id_lapangan`, `id_pengguna`, `tanggal_mulai`, `tanggal_selesai`, `status`, `keterangan`, `created_at`, `created_by`, `updated_at`) VALUES
-(1, 139, 9133, '2024-05-01 00:00:00', '2024-05-02 00:00:00', 'aktif', 'masih bekerja', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00');
-
 -- --------------------------------------------------------
 
 --
@@ -177,11 +170,8 @@ CREATE TABLE `pengguna_olahraga` (
 INSERT INTO `pengguna_olahraga` (`id_pengguna`, `username_pengguna`, `password_pengguna`, `jenis_pengguna`, `created_at`, `created_by`, `updated_at`, `updated_by`, `last_login`, `tgl_member_berakhir`) VALUES
 (3, 'tus', '$2a$12$eA2P.NrF.zYPdvK5Q2z3A.ePFyKSp5qbrO/maGKz7epvf5K82d3lm', 'pemilik', NULL, '', '2024-05-22 07:33:37', '', '2024-05-22 07:33:37', '0000-00-00 00:00:00'),
 (9131, 'anisetus', '$2a$12$eA2P.NrF.zYPdvK5Q2z3A.ePFyKSp5qbrO/maGKz7epvf5K82d3lm', 'pelanggan', '0000-00-00 00:00:00.000000', 'anisetus', '0000-00-00 00:00:00', 'anisetus', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(9132, 'samuel', '$2y$10$an./3dXnqsgUOYL45mBhnOHS7AsxbXGo5UyhG6LMiZ3/4WxKDXbBa', 'pelanggan', '2024-05-22 03:08:07.000000', 'samuel', '2024-05-22 03:13:20', 'samuel', '2024-05-22 03:13:20', NULL),
-(9133, 'jawa', '$2y$10$dQtuCqBiJw.hGGKxSWFRPuo2kM6FZRMo5diRT9AaBpoSAT0Zc3vDO', 'pengelola', '2024-05-22 07:39:44.000000', 'admin', '2024-05-22 07:39:44', 'admin', NULL, NULL),
-(9134, 'gurusekolah', '$2y$10$.OD1unZsUSWgLWXpgTD6qu9smoz756DJ3.stdgCi8ngifr.stdgg2', 'pengelola', '2024-05-22 08:52:31.000000', 'admin', '2024-05-22 08:52:31', 'admin', NULL, NULL),
-(9135, 'manager', '$2y$10$UjFpYZqPdCTtsNOQSKIFMeQya9GSvAcmzdMzxNWkU/O4WV9P6Qp4u', 'pengelola', '2024-05-22 09:02:45.000000', 'admin', '2024-05-22 09:02:45', NULL, NULL, NULL),
-(9136, 'cobalagi', '$2y$10$1tguNj2s2O91qxkJg2XX4OYP6CnKRsgYBRrydRYT27LyQn8JW6nEK', 'pengelola', '2024-05-22 09:06:45.000000', 'admin', '2024-05-22 09:06:45', NULL, NULL, NULL);
+(9132, 'samsi', '$2a$12$eA2P.NrF.zYPdvK5Q2z3A.ePFyKSp5qbrO/maGKz7epvf5K82d3lm', 'pelanggan', '2024-05-22 03:08:07.000000', '', '2024-05-22 03:13:20', '', '2024-05-22 03:13:20', NULL),
+(9134, 'samsi', '$2a$12$eA2P.NrF.zYPdvK5Q2z3A.ePFyKSp5qbrO/maGKz7epvf5K82d3lm', 'pengelola', '2024-05-22 08:52:31.000000', 'admin', '2024-05-22 08:52:31', 'admin', NULL, NULL);
 
 -- --------------------------------------------------------
 
